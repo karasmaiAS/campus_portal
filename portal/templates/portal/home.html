@@ -1,0 +1,29 @@
+{% extends 'portal/base.html' %}
+
+{% block title %}Home | Campus Portal{% endblock %}
+
+{% block content %}
+<section class="hero" aria-labelledby="welcome-heading">
+    <p class="eyebrow">Student Portal</p>
+    <h1 id="welcome-heading">Welcome to Campus Portal</h1>
+    <p class="intro">Your simple starting point for staying informed, organized, and connected throughout your college experience.</p>
+</section>
+
+<section class="features-section" aria-labelledby="features-heading">
+    <h2 id="features-heading">Everything you need for campus life</h2>
+    <div class="feature-grid">
+        <article class="feature-card">
+            <h3>Campus Announcements</h3>
+            <p>Find important notices, upcoming events, and updates from your college in one place.</p>
+        </article>
+        <article class="feature-card">
+            <h3>Class Schedules</h3>
+            <p>Keep track of class times, locations, and the academic activities that shape your week.</p>
+        </article>
+        <article class="feature-card">
+            <h3>Student Resources</h3>
+            <p>Discover learning support, student services, and helpful information for success on campus.</p>
+        </article>
+    </div>
+</section>
+{% endblock %}

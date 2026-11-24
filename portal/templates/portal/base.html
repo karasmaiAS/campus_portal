@@ -1,0 +1,29 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Campus Portal{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'portal/css/style.css' %}">
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-inner">
+            <a class="brand" href="{% url 'home' %}" aria-label="Campus Portal home">
+                <img src="{% static 'portal/images/logo.png' %}" alt="Campus Portal college logo">
+                <span>Campus Portal</span>
+            </a>
+            {% include 'portal/partials/navbar.html' %}
+        </div>
+    </header>
+
+    <main id="main-content" class="main-content">
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; {% now "Y" %} Campus Portal. Supporting every student's college journey.</p>
+    </footer>
+</body>
+</html>
